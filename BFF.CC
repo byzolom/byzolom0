@@ -86,12 +86,12 @@ end)
 EnableBoxESP()
 
 local SelectPart = "Head"
-local HBSizeX = 11
-local HBSizeY = 11
-local HBSizeZ = 11
-local HBTrans = 1.0
+local HBSizeX = 10
+local HBSizeY = 10
+local HBSizeZ = 10
+local HBTrans = 0.7
 
-local PurpleColor = BrickColor.new("Bright red")
+local PurpleColor = BrickColor.new("Bright yellow")
 
 local hitboxlist = {}
 
@@ -724,7 +724,7 @@ local Library = loadstring(game:HttpGet(repo .. 'Library.lua'))()
 local ThemeManager = loadstring(game:HttpGet(repo .. 'addons/ThemeManager.lua'))()
 local SaveManager = loadstring(game:HttpGet(repo .. 'addons/SaveManager.lua'))()
 
-local Window = Library:CreateWindow({Title = 'Float.Balls | Free [No Actor]',Center = true,AutoShow = true,TabPadding = 8,MenuFadeTime = 0.2})
+local Window = Library:CreateWindow({Title = 'BFF.CC | Best Script ',Center = true,AutoShow = true,TabPadding = 8,MenuFadeTime = 0.2})
 local Tabs = {Main = Window:AddTab('Main'),Visual = Window:AddTab('Visual'),['UI Settings'] = Window:AddTab('UI Settings'),}
 
 --Tables
@@ -1028,7 +1028,7 @@ local WatermarkConnection = game:GetService('RunService').RenderStepped:Connect(
         FrameCounter = 0;
     end;
 
-    Library:SetWatermark(('BFF.CC | %s fps | %s ms'):format(
+    Library:SetWatermark(('by.zolom | %s fps | %s ms'):format(
         math.floor(FPS),
         math.floor(game:GetService('Stats').Network.ServerStatsItem['Data Ping']:GetValue())
     ));
